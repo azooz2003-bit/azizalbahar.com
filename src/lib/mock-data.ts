@@ -14,13 +14,24 @@ export const projects: Project[] = [
     },
   },
   {
+    id: "canvasplus",
+    name: "CanvasPlus",
+    description:
+      "A macOS & iOS client for Canvas LMS with on-device AI and improved student workflows.",
+    icon: "/images/projects/CanvasPlus/CanvasPlus-iOS-Default-1024x1024@1x.png",
+    iconDark: "/images/projects/CanvasPlus/CanvasPlus-iOS-Dark-1024x1024@1x.png",
+    links: {
+      github: "https://github.com/azooz2003-bit/CanvasPlusPlayground",
+    },
+  },
+  {
     id: "guess-e",
     name: "GUESS-E",
     description:
       "Like Pictionary, with AI. Available on the App Store.",
     icon: "/images/projects/GUESS-EIcon.svg",
     links: {
-      appStore: "https://apps.apple.com/app/guess-e/id6449874870",
+      appStore: "https://apps.apple.com/us/app/guess-e-ai-pictionary/id6450125557",
     },
   },
   {
@@ -82,44 +93,7 @@ export const experiences: Experience[] = [
   },
 ];
 
-export const writings: WritingEntry[] = [
-  {
-    id: "thought-1",
-    excerpt: "The best way to learn is to ship something real.",
-    content:
-      "The best way to learn is to ship something real. Every project I've built taught me more than any course. The constraint of a deadline, real users, and working with others forces you to actually understand what you're doing.",
-    category: "thought",
-    date: "2025-01-15",
-  },
-  {
-    id: "thought-2",
-    excerpt: "Good software feels obvious in retrospect.",
-    content:
-      "Good software feels obvious in retrospect. The hardest part of building something isn't the code — it's deciding what to leave out. Every feature you don't add is a gift to your users.",
-    category: "thought",
-    date: "2025-02-01",
-  },
-  {
-    id: "article-1",
-    title: "Building GUESS-E: Multiplayer AI on iOS",
-    excerpt:
-      "How I used Multipeer Connectivity and OpenAI to build a party game.",
-    content:
-      "GUESS-E started as a simple idea: what if Pictionary had an AI judge? I used Apple's Multipeer Connectivity framework for local multiplayer and the OpenAI API for image recognition. The biggest challenge was keeping latency low enough for real-time gameplay. Here's how I approached it...",
-    category: "article",
-    date: "2024-12-10",
-  },
-  {
-    id: "article-2",
-    title: "Lessons from hackathons",
-    excerpt:
-      "What I learned from HackPrinceton, HackHarvard, HackGT, and ShellHacks.",
-    content:
-      "After four hackathons, the biggest lesson isn't technical — it's about scope. You have 36 hours. The teams that win aren't the ones with the most features; they're the ones with the clearest story. A polished demo of one feature beats a buggy prototype of ten.",
-    category: "article",
-    date: "2024-11-20",
-  },
-];
+export const writings: WritingEntry[] = [];
 
 export const socialLinks: SocialLink[] = [
   {
