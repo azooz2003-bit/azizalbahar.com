@@ -1,3 +1,3 @@
 # azizalbahar.com
 
-My personal website. Built with Next.js, Tailwind CSS, and Framer Motion.
+My [personal website](https://azizalbahar.com). Built with Next.js, Tailwind CSS, and Framer Motion.
