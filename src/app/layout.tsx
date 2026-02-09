@@ -6,7 +6,7 @@ import ThemeProvider from "@/components/layout/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Aziz Albahar",
-  description: "iOS / macOS Engineer. Building native Apple apps with Swift and SwiftUI.",
+  description: "I build native Apple platform apps. Also interested in backend engineering and API design.",
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="antialiased h-screen flex flex-col overflow-hidden">
+      <body className="antialiased h-dvh flex flex-col overflow-hidden">
         <ThemeProvider>
           <Navbar />
           <main className="flex-1 overflow-y-auto">
