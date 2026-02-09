@@ -41,7 +41,7 @@ export const projects: Project[] = [
       "An app connecting local street artists with enthusiasts. Built at HackPrinceton.",
     icon: "/images/projects/BuskIcon.svg",
     links: {
-      github: "https://github.com/AzizAlbaworkers/LetsBusk",
+      github: "https://github.com/azooz2003-bit/LetsBusk",
     },
   },
   {
@@ -51,7 +51,7 @@ export const projects: Project[] = [
       "A lite app displaying a heatmap of school intruders. Built at HackHarvard.",
     icon: "/images/projects/eduSafeIcon.svg",
     links: {
-      github: "https://github.com/AzizAlbaworkers/eduSafe",
+      github: "https://github.com/azooz2003-bit/eduSafe",
     },
   },
   {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
       "A collaboration app for Georgia Tech students pursuing technical side-projects.",
     icon: "/images/projects/GTLinkIcon.svg",
     links: {
-      github: "https://github.com/AzizAlbaworkers/GT-Link",
+      github: "https://github.com/azooz2003-bit/GTLink",
     },
   },
 ];
