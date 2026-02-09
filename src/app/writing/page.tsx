@@ -7,10 +7,11 @@ import CategoryTabs from "@/components/writing/CategoryTabs";
 import type { WritingCategory } from "@/components/writing/CategoryTabs";
 import WritingGrid from "@/components/writing/WritingGrid";
 import WritingExpandedView from "@/components/writing/WritingExpandedView";
-import { writings } from "@/lib/mock-data";
+import { useWritings } from "@/hooks/useWritings";
 import type { WritingEntry } from "@/lib/types";
 
 export default function WritingPage() {
+  const { writings, loading, error } = useWritings();
   const [category, setCategory] = useState<WritingCategory>("all");
   const [selected, setSelected] = useState<WritingEntry | null>(null);
 
@@ -19,7 +20,7 @@ export default function WritingPage() {
       category === "all"
         ? writings
         : writings.filter((w) => w.category === category),
-    [category]
+    [category, writings]
   );
 
   return (
