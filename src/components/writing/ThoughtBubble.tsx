@@ -13,7 +13,7 @@ export default function ThoughtBubble({ entry, onClick, showCategory }: ThoughtB
   return (
     <motion.button
       onClick={onClick}
-      className="thought-bubble relative p-6 mb-14 w-full text-left cursor-pointer"
+      className="thought-bubble relative p-6 w-full text-left cursor-pointer"
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >

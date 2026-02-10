@@ -41,7 +41,7 @@ export default function WritingGrid({
       className="flex flex-col gap-4"
     >
       {entries.map((entry) => (
-        <motion.div key={entry.id} variants={itemVariants}>
+        <motion.div key={entry.id} variants={itemVariants} className={entry.category === "thought" ? "pb-10" : ""}>
           {entry.category === "thought" ? (
             <ThoughtBubble
               entry={entry}

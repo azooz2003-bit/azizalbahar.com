@@ -15,7 +15,9 @@ export default function WritingExpandedView({
 }: WritingExpandedViewProps) {
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center p-6"
+      className={`fixed inset-0 z-50 flex items-center justify-center p-6 ${
+        entry.category === "thought" ? "overflow-visible" : ""
+      }`}
       variants={overlayVariants}
       initial="initial"
       animate="animate"
@@ -35,7 +37,7 @@ export default function WritingExpandedView({
       <motion.div
         className={`relative z-10 w-full max-w-lg ${
           entry.category === "thought"
-            ? "thought-bubble thought-bubble--no-tail"
+            ? "thought-bubble thought-bubble--no-tail overflow-visible"
             : "glass-card max-h-[80vh] overflow-y-auto"
         } p-8`}
         initial={{ opacity: 0, scale: 0.95, y: 10 }}
