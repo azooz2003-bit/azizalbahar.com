@@ -33,7 +33,7 @@ export default function WritingPage() {
 
       <PageTransition>
         <div className="pt-12 pb-12">
-          <WritingGrid entries={filtered} onSelect={setSelected} />
+          <WritingGrid entries={filtered} onSelect={setSelected} showCategory={category === "all"} />
         </div>
       </PageTransition>
 

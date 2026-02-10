@@ -33,8 +33,10 @@ export default function WritingExpandedView({
 
       {/* Content */}
       <motion.div
-        className={`relative z-10 w-full max-w-lg max-h-[80vh] overflow-y-auto ${
-          entry.category === "thought" ? "thought-bubble" : "glass-card"
+        className={`relative z-10 w-full max-w-lg ${
+          entry.category === "thought"
+            ? "thought-bubble thought-bubble--no-tail"
+            : "glass-card max-h-[80vh] overflow-y-auto"
         } p-8`}
         initial={{ opacity: 0, scale: 0.95, y: 10 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -57,7 +59,7 @@ export default function WritingExpandedView({
         {entry.category === "article" && (
           <h2 className="text-lg font-semibold mb-3 pr-8">{entry.title}</h2>
         )}
-        <p className="text-sm leading-relaxed text-text-primary">
+        <p className="text-sm leading-relaxed text-text-primary pr-8">
           {entry.content}
         </p>
         <p className="text-xs text-text-tertiary mt-4">{entry.date}</p>

@@ -8,6 +8,7 @@ import type { WritingEntry } from "@/lib/types";
 interface WritingGridProps {
   entries: WritingEntry[];
   onSelect: (entry: WritingEntry) => void;
+  showCategory?: boolean;
 }
 
 const containerVariants = {
@@ -29,6 +30,7 @@ const itemVariants = {
 export default function WritingGrid({
   entries,
   onSelect,
+  showCategory,
 }: WritingGridProps) {
   return (
     <motion.div
@@ -44,11 +46,13 @@ export default function WritingGrid({
             <ThoughtBubble
               entry={entry}
               onClick={() => onSelect(entry)}
+              showCategory={showCategory}
             />
           ) : (
             <ArticleCard
               entry={entry}
               onClick={() => onSelect(entry)}
+              showCategory={showCategory}
             />
           )}
         </motion.div>

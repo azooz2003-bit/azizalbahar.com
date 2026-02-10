@@ -7,9 +7,10 @@ import type { WritingEntry } from "@/lib/types";
 interface ArticleCardProps {
   entry: WritingEntry;
   onClick: () => void;
+  showCategory?: boolean;
 }
 
-export default function ArticleCard({ entry, onClick }: ArticleCardProps) {
+export default function ArticleCard({ entry, onClick, showCategory }: ArticleCardProps) {
   return (
     <motion.div className="w-full">
       <GlassCard
@@ -17,6 +18,9 @@ export default function ArticleCard({ entry, onClick }: ArticleCardProps) {
         onClick={onClick}
         className="p-5 cursor-pointer h-full"
       >
+        {showCategory && (
+          <p className="text-[10px] uppercase tracking-wider text-text-tertiary mb-2">Article</p>
+        )}
         <h3 className="text-sm font-semibold">{entry.title}</h3>
         <p className="text-xs text-text-secondary mt-2 leading-relaxed line-clamp-3">
           {entry.excerpt}
