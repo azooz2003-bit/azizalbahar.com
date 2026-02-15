@@ -9,6 +9,7 @@ import { useTheme } from "./ThemeProvider";
 const links = [
   { href: "/", label: "Home" },
   { href: "/writing", label: "Writing" },
+  { href: "/singing", label: "Singing" },
 ];
 
 export default function Navbar() {

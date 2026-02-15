@@ -1,4 +1,4 @@
-import { Project, Experience, WritingEntry, SocialLink } from "./types";
+import { Project, Experience, WritingEntry, SocialLink, Video } from "./types";
 
 export const projects: Project[] = [
   {
@@ -110,5 +110,18 @@ export const socialLinks: SocialLink[] = [
     platform: "linkedin",
     url: "https://linkedin.com/in/azizalbahar",
     label: "LinkedIn",
+  },
+];
+
+export const videos: Video[] = [
+  {
+    id: "video-1",
+    title: "Dear Evan Hansen - For Forever",
+    youtubeId: "K-WE9evhfUQ",
+  },
+  {
+    id: "video-2",
+    title: "Tom Petty - Won't Back Down (Debut)",
+    youtubeId: "1j3hsue62pQ",
   },
 ];

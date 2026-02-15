@@ -34,3 +34,11 @@ export interface SocialLink {
   url: string;
   label: string;
 }
+
+export interface Video {
+  id: string;
+  title: string;
+  description?: string;
+  youtubeId: string;
+  thumbnail?: string;
+}

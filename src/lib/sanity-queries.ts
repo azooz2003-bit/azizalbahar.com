@@ -8,3 +8,13 @@ export const writingsQuery = `
     date
   }
 `;
+
+export const videosQuery = `
+  *[_type == "video"] | order(date desc) {
+    "id": _id,
+    title,
+    description,
+    youtubeId,
+    date
+  }
+`;
